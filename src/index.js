@@ -7,7 +7,8 @@ import "bulma/css/bulma.css";
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import rootReducer from './slices'
-import Testing from './testing';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const store = configureStore({ reducer: rootReducer })
 
