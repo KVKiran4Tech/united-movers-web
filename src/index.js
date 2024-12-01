@@ -1,5 +1,5 @@
 import React from 'react';
-import { render } from 'react-dom'
+import ReactDOM from "react-dom/client";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,14 +7,16 @@ import "bulma/css/bulma.css";
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
 import rootReducer from './slices'
+import Testing from './testing';
 
 const store = configureStore({ reducer: rootReducer })
 
-render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <Provider store={store}>
     <App />
-  </Provider>,
-  document.getElementById('root')
+  </Provider>
 )
 
 // If you want to start measuring performance in your app, pass a function
