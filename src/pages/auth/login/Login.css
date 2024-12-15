@@ -6,6 +6,7 @@ body {
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: #f7f7f7;
 }
 
 .testButton {
@@ -21,4 +22,39 @@ h1 {
     font-size: 2em;
     border-bottom: 1px solid rgb(248, 248, 248);
     margin-bottom: 25px;
+}
+
+.login {
+    min-height: 50vh;
+}
+  
+.bg-image {
+  background-image: url('../../../assets/img/bike_hero.jpg');
+  background-size: contain;
+  background-position: center;
+  padding: 15px;
+  border-right: 1px solid #dbdbdb;
+  background-repeat: no-repeat;
+
+}
+
+
+.login-heading {
+  font-weight: 300;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  
+}
+.width-100{
+  width:100% !important;
+}
+.margin-690{
+  margin-top:690px !important;
+}
+.b-white{
+  background: #fff;
 }
